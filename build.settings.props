@@ -137,12 +137,14 @@
             </Properties>
         </BuildStepsToExecute>
 
+        <!--
         <BuildStepsToExecute Include="$(BuildStepsUnitTestNUnit)">
             <Properties>
                 Configuration=$(TestConfiguration);
                 Platform=$(Platform)
             </Properties>
         </BuildStepsToExecute>
+        -->
         <!--
         <BuildStepsToExecute Include="$(BuildStepsUnitTestMsTest)">
             <Properties>
@@ -182,12 +184,6 @@
         </BuildStepsToExecute>
         -->
 
-        <BuildStepsToExecute Include="$(DirWorkspace)\build.preparesourcepackages.msbuild">
-            <Properties>
-                Configuration=$(ProductionConfiguration);
-                Platform=$(Platform)
-            </Properties>
-        </BuildStepsToExecute>
         <BuildStepsToExecute Include="$(BuildStepsPackNuGet)">
             <Properties>
                 Configuration=$(ProductionConfiguration);
@@ -557,6 +553,7 @@
         property, the 'AssemblyFromPackage' property and the 'PublicKey' property.
     -->
     <ItemGroup>
+        <!--
         <InternalsVisibleTo Include="Nuclei.AppDomains">
             <Projects>
                 Nuclei;
@@ -637,6 +634,7 @@
             </Projects>
             <PublicKey>0024000004800000940000000602000000240000525341310004000001000100c547cac37abd99c8db225ef2f6c8a3602f3b3606cc9891605d02baa56104f4cfc0734aa39b93bf7852f7d9266654753cc297e7d2edfe0bac1cdcf9f717241550e0a7b191195b7667bb4f64bcb8e2121380fd1d9d46ad2d92d2d15605093924cceaf74c4861eff62abf69b9291ed0a340e113be11e6a7d3113e92484cf7045cc7</PublicKey>
         </InternalsVisibleTo>
+        -->
     </ItemGroup>
 
     <!--
@@ -871,56 +869,8 @@
         All file paths allow build templates, e.g. $(DirSrc)\${ProductName}\myproject.nuspec.
     -->
     <ItemGroup>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei\nuclei.nuspec">
-            <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
         <NuGetPackageSpecs Include="$(DirSrc)\nuclei.build\nuclei.build.nuspec">
             <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.communication\nuclei.communication.nuspec">
-            <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.configuration\nuclei.configuration.nuspec">
-            <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.diagnostics\nuclei.diagnostics.nuspec">
-            <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.nunit.extensions\nuclei.nunit.extensions.nuspec">
-            <ShouldBuildSymbols>true</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.appdomains\nuclei.appdomains.nuspec">
-            <ShouldBuildSymbols>false</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.exceptionhandling\nuclei.exceptionhandling.nuspec">
-            <ShouldBuildSymbols>false</ShouldBuildSymbols>
-            <IncludedDependencies>
-            </IncludedDependencies>
-            <ExcludedDependencies></ExcludedDependencies>
-        </NuGetPackageSpecs>
-        <NuGetPackageSpecs Include="$(DirSrc)\nuclei.fusion\nuclei.fusion.nuspec">
-            <ShouldBuildSymbols>false</ShouldBuildSymbols>
             <IncludedDependencies>
             </IncludedDependencies>
             <ExcludedDependencies></ExcludedDependencies>

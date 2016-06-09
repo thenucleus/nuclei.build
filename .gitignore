@@ -164,3 +164,4 @@ $RECYCLE.BIN/
 AssemblyInfo.Company.cs
 *.ide
 src/.vs/config/applicationhost.config
+doc/_site/

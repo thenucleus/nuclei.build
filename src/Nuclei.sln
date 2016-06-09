@@ -23,7 +23,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{525FF8D6-BF44-4BEB-BEF4-DD767DC0E722}"
 	ProjectSection(SolutionItems) = preProject
 		..\build.onerror.msbuild = ..\build.onerror.msbuild
-		..\build.preparesourcepackages.msbuild = ..\build.preparesourcepackages.msbuild
 		..\build.settings.props = ..\build.settings.props
 		..\deploy.settings.props = ..\deploy.settings.props
 		..\nuclei.msbuild = ..\nuclei.msbuild

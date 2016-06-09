@@ -26,10 +26,19 @@ namespace Nuclei.Build
         /// <exception cref="ArgumentNullException">
         ///     Thrown if <paramref name="versionControlInformation"/> is <see langword="null" />.
         /// </exception>
+        /// <exception cref="ArgumentException">
+        ///     Thrown if <paramref name="versionControlInformation"/> is a string which is empty or filled with whitespace.
+        /// </exception>
         public AssemblyBuildInformationAttribute(int buildNumber, string versionControlInformation)
         {
+            if (versionControlInformation == null)
             {
-                Lokad.Enforce.Argument(() => versionControlInformation);
+                throw new ArgumentNullException("versionControlInformation", "The version control information string should not be null");
+            }
+
+            if (string.IsNullOrWhiteSpace(versionControlInformation))
+            {
+                throw new ArgumentException("The version control information string should not be an empty string.", "versionControlInformation");
             }
 
             BuildNumber = buildNumber;

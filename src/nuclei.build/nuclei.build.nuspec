@@ -4,9 +4,9 @@
     <id>Nuclei.Build</id>
     <version>$VersionSemantic$</version>
     <authors>P. van der Velde</authors>
-    <owners>P. van der Velde</owners>
+    <owners>$CompanyName$</owners>
     <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
-    <projectUrl>https://github.com/pvandervelde/Nuclei</projectUrl>
+    <projectUrl>$CompanyUrl$</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>
       Provides attributes that can be applied to assemblies to provide build related information.

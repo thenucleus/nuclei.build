@@ -37,6 +37,7 @@ using Nuclei.Build;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyInformationalVersion("1.0.0.0")]
 
 // The time the assembly was build
 [assembly: AssemblyBuildTime(buildTime: "1900-01-01T01:01:01+00:00")]

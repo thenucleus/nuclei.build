@@ -82,7 +82,6 @@
     <Compile Include="..\..\templates\AssemblyInfo.Base.cs">
       <Link>Properties\AssemblyInfo.Base.cs</Link>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.BuildInformation.cs" />
     <Compile Include="AssemblyBuildTimeAttribute.cs" />
     <Compile Include="AssemblyBuildInformationAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

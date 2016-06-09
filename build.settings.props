@@ -472,7 +472,7 @@
         <!--
             The full path of the key file that will be used to sign the assemblies during the compilation process.
         -->
-        <AssemblyOriginatorKeyFile Condition="$(ShouldSign)">$(SOFTWARE_SIGNING_KEY_PATH)</AssemblyOriginatorKeyFile>
+        <AssemblyOriginatorKeyFile Condition="$(ShouldSign)">$(SOFTWARE_SIGNING_KEY_PATH)\nuclei.snk</AssemblyOriginatorKeyFile>
     </PropertyGroup>
 
     <!--

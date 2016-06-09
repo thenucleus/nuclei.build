@@ -86,7 +86,7 @@
             * Copyrights
             * API documentation
         -->
-        <ProductName Condition=" '$(ProductName)' == '' ">Nuclei</ProductName>
+        <ProductName Condition=" '$(ProductName)' == '' ">Nuclei.Build</ProductName>
 
         <!--
             The name of the product that can be used as part of a file path. This is for instance used for:
@@ -94,7 +94,7 @@
             * SourceMonitor
             * Deployment directory naming
         -->
-        <ProductNameInFilePath Condition=" '$(ProductNameInFilePath)' == '' ">Nuclei</ProductNameInFilePath>
+        <ProductNameInFilePath Condition=" '$(ProductNameInFilePath)' == '' ">nuclei.build</ProductNameInFilePath>
 
         <!--
             The description of the product. This is for instance used for:
@@ -109,7 +109,7 @@
             * Finding the correct assemblies and namespaces for unit testing and coverage reporting
             * Generated code files that contain namespaces
         -->
-        <ProductNamespace Condition=" '$(ProductNamespace)' == '' ">Nuclei</ProductNamespace>
+        <ProductNamespace Condition=" '$(ProductNamespace)' == '' ">Nuclei.Build</ProductNamespace>
 
         <!--
             The first year the product was available / created. This is for instance used for:
@@ -122,19 +122,19 @@
             * Copyrights
             * API documentation
         -->
-        <CompanyName Condition=" '$(CompanyName)' == '' ">Nuclei</CompanyName>
+        <CompanyName Condition=" '$(CompanyName)' == '' ">TheNucleus</CompanyName>
 
         <!--
             The name of the company that can be used as a part of a file path. This is for instance used for:
             * Installer file paths
         -->
-        <CompanyNameInFilePath Condition=" '$(CompanyNameInFilePath)' == '' ">Nuclei</CompanyNameInFilePath>
+        <CompanyNameInFilePath Condition=" '$(CompanyNameInFilePath)' == '' ">TheNucleus</CompanyNameInFilePath>
 
         <!--
             The URL of the company website. This is for instance used for:
             * nuspec files
         -->
-        <CompanyUrl Condition=" '$(CompanyUrl)' == '' ">https://github.com/$(GitHubUserName)/Nuclei</CompanyUrl>
+        <CompanyUrl Condition=" '$(CompanyUrl)' == '' ">https://github.com/TheNucleus/nuclei.build</CompanyUrl>
 
         <!--
             The email address that is specified in the documentation. This is for instance used for:
@@ -161,19 +161,19 @@
     -->
     <PropertyGroup>
         <!-- The user name of the user who owns the repository on GitHub -->
-        <GitHubUserName Condition=" '$(GitHubUserName)' == '' ">pvandervelde</GitHubUserName>
+        <GitHubUserName Condition=" '$(GitHubUserName)' == '' ">thenucleus</GitHubUserName>
 
         <!--
             The github repository that contains the source code for the current product. Used when getting the release notes
             from the github issues. The correct format is <USERNAME>/<REPOSITORYNAME>
         -->
-        <GitHubRepositoryName Condition=" '$(GitHubRepositoryName)' == '' ">$(GitHubUserName)\Nuclei</GitHubRepositoryName>
+        <GitHubRepositoryName Condition=" '$(GitHubRepositoryName)' == '' ">$(GitHubUserName)\nuclei.build</GitHubRepositoryName>
 
         <!--
             The full URL to the GIT repository. Can include the '%GitHubToken%' environment variable for authenticated
             connection to the repository, e.g. https://%GitHubToken%:@github.com/MyUser/MyProject.git
         -->
-        <GitRemoteRepository Condition=" '$(GitRemoteRepository)' == '' ">https://github.com/$(GitHubUserName)/Nuclei.git</GitRemoteRepository>
+        <GitRemoteRepository Condition=" '$(GitRemoteRepository)' == '' ">https://github.com/$(GitHubUserName)/nuclei.build.git</GitRemoteRepository>
 
         <!--
             A flag indicating whether or not the workspace is a GIT workspace or not. If no value is provided then

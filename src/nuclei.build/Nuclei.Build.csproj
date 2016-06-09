@@ -55,6 +55,7 @@
     <None Include="$(SOFTWARE_SIGNING_KEY_PATH)">
       <Link>Properties\App.snk</Link>
     </None>
+    <AdditionalFiles  Include="..\stylecop.json" />
     <None Include="nuclei.build.nuspec" />
     <None Include="packages.config">
       <SubType>Designer</SubType>

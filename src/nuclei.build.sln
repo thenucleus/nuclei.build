@@ -35,7 +35,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "codeanalysis", "codeanalysi
 		default.ruleset = default.ruleset
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuclei.Build.Documentation", "..\doc\Nuclei.Build.Documentation.csproj", "{F6E6D7BB-5943-414B-9971-9706862A178A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuclei.Build.Documentation", "..\doc\Nuclei.Build.Documentation\Nuclei.Build.Documentation.csproj", "{F6E6D7BB-5943-414B-9971-9706862A178A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

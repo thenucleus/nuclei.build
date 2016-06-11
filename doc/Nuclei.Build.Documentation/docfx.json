@@ -3,14 +3,14 @@
     {
       "src": [
         {
-            "cwd": "../src",
+            "cwd": "../",
             "exclude": [
                 "**/obj/**",
                 "**/bin/**",
                 "_site/**"
             ],
             "files": [
-                "**/*.csproj"
+                "src/**/*.csproj"
             ]
         }
       ],

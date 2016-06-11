@@ -1,4 +1,4 @@
-# Nuclei
+# Nuclei.Build
 Nuclei is a collection of libraries containing classes and functions for inter-application interaction via a command mechanism, diagnostics, configuration handling, exception handling and assembly location and loading.
 The `Nuclei.Build` assembly contains attribute classes which can be used at build time to embed information about the specific build into an assembly, e.g. time and date of build or information describing the version control revision of the source code that was used to create the assembly.
 

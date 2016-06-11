@@ -1,9 +1,9 @@
+# Nuclei.Build
 Nuclei is a collection of libraries containing classes and functions for inter-application interaction via a command mechanism, diagnostics, configuration handling, exception handling and assembly location and loading.
 The `Nuclei.Build` assembly contains attribute classes which can be used at build time to embed information about the specific build into an assembly, e.g. time and date of build or information describing the version control revision of the source code that was used to create the assembly.
 
-
 # Installation instructions
-All libraries are available on [NuGet.org](http://www.nuget.org).
+All libraries are available on [NuGet.org](https://www.nuget.org/packages/Nuclei.Build/).
 
 # How to build
 The solution files are created in Visual Studio 2013 (using .NET 4.0) and the assemblies can be build either from Visual Studio or through the build script.
@@ -23,7 +23,9 @@ Note that the build scripts assume that:
 # How to contribute
 There are a few ways to contribute:
 
-* By opening an issue on the project. If
+* By opening an issue on the project.
 * By provide a pull-request for a new feature or a bug.
 
 Any suggestions or improvements you may have are more than welcome.
+
+[snkfile_msdn]: http://msdn.microsoft.com/en-us/library/6f05ezxy(v=vs.110).aspx

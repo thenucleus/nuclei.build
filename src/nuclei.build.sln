@@ -21,6 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuclei.Build", "nuclei.buil
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{525FF8D6-BF44-4BEB-BEF4-DD767DC0E722}"
 	ProjectSection(SolutionItems) = preProject
+		..\build.documentation.docfx.msbuild = ..\build.documentation.docfx.msbuild
 		..\build.onerror.msbuild = ..\build.onerror.msbuild
 		..\build.settings.props = ..\build.settings.props
 		..\deploy.settings.props = ..\deploy.settings.props
@@ -33,6 +34,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "codeanalysis", "codeanalysi
 	ProjectSection(SolutionItems) = preProject
 		default.ruleset = default.ruleset
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nuclei.Build.Documentation", "..\doc\Nuclei.Build.Documentation\Nuclei.Build.Documentation.csproj", "{F6E6D7BB-5943-414B-9971-9706862A178A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +50,10 @@ Global
 		{AEA39FA0-9B45-4FDF-B94C-543E410F480C}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
 		{AEA39FA0-9B45-4FDF-B94C-543E410F480C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEA39FA0-9B45-4FDF-B94C-543E410F480C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6E6D7BB-5943-414B-9971-9706862A178A}.Debug|Any CPU.ActiveCfg = Deploy|Any CPU
+		{F6E6D7BB-5943-414B-9971-9706862A178A}.Deploy|Any CPU.ActiveCfg = Deploy|Any CPU
+		{F6E6D7BB-5943-414B-9971-9706862A178A}.Deploy|Any CPU.Build.0 = Deploy|Any CPU
+		{F6E6D7BB-5943-414B-9971-9706862A178A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

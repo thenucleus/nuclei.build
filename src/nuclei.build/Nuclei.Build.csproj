@@ -2,6 +2,9 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SolutionDir Condition="'$(SolutionDir)' == '' or '$(SolutionDir)' == '*undefined*'">$(MSBuildProjectDirectory)\..</SolutionDir>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SolutionDir Condition="'$(SolutionDir)' == '' or '$(SolutionDir)' == '*undefined*'">$(MSBuildProjectDirectory)\..</SolutionDir>
     <ProjectGuid>{AEA39FA0-9B45-4FDF-B94C-543E410F480C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>Nuclei.Build</RootNamespace>
@@ -41,6 +44,7 @@
     <Optimize>true</Optimize>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
+  <Import Project="$(SolutionDir)/base.props" />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -62,12 +66,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\templates\AssemblyInfo.Base.cs">
-      <Link>Properties\AssemblyInfo.Base.cs</Link>
-    </Compile>
     <Compile Include="AssemblyBuildTimeAttribute.cs" />
     <Compile Include="AssemblyBuildInformationAttribute.cs" />
-    <Compile Include="Properties\AssemblyInfo.BuildInformation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

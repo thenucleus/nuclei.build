@@ -19,9 +19,9 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="$DirBin$\Nuclei.Build.dll" target="lib\net40" />
-    <file src="$DirBin$\Nuclei.Build.pdb" target="lib\net40" />
-    <file src="$DirBin$\Nuclei.Build.xml" target="lib\net40" />
+    <file src="$DirSrc$\Nuclei.Build\bin\$Configuration$\Nuclei.Build.dll" target="lib\net40" />
+    <file src="$DirSrc$\Nuclei.Build\bin\$Configuration$\Nuclei.Build.pdb" target="lib\net40" />
+    <file src="$DirSrc$\Nuclei.Build\bin\$Configuration$\Nuclei.Build.xml" target="lib\net40" />
     <file src="$DirSrc$\Nuclei.Build\**\*.cs" target="src\Nuclei.Build" />
   </files>
 </package>

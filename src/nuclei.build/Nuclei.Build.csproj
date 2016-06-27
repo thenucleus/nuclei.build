@@ -41,7 +41,6 @@
     <Optimize>true</Optimize>
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
-  <Import Project="../../packages/nBuildKit.MsBuild.Projects.CSharp.0.7.0/build/import.props" Condition=" Exists('../../packages/nBuildKit.MsBuild.Projects.CSharp.0.7.0/build/import.props') " />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.configuration" />
@@ -72,17 +71,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="nbuildkit.csharp.readme.txt" />
-    <Content Include="nbuildkit.readme.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\Newtonsoft.Json.dll" />
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.CodeFixes.dll" />
     <Analyzer Include="..\..\packages\StyleCop.Analyzers.1.0.0\analyzers\dotnet\cs\StyleCop.Analyzers.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <Import Project="../../packages/nBuildKit.MsBuild.Projects.CSharp.0.7.0/build/import.targets" Condition=" Exists('../../packages/nBuildKit.MsBuild.Projects.CSharp.0.7.0/build/import.targets') " />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

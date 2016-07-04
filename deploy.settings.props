@@ -34,7 +34,6 @@
         $(DirNBuildKitMsBuildTemplates)   - The full path to the directory that contains the nBuildKit templates.
     -->
     <ItemGroup>
-        <!-->
         <DeployStepsToExecute Include="$(DeployStepsPrepareVcsBranch)">
             <Properties>
             </Properties>
@@ -49,6 +48,7 @@
                 Prepare;
             </Groups>
         </DeployStepsToExecute>
+        <!--
         <DeployStepsToExecute Include="$(DeployStepsTagVcs)">
             <Properties>
                 Configuration=$(ProductionConfiguration);
@@ -58,6 +58,7 @@
                 Tag;
             </Groups>
         </DeployStepsToExecute>
+        -->
         <DeployStepsToExecute Include="$(DeployStepsPushToNuget)">
             <Properties>
                 Configuration=$(ProductionConfiguration);
@@ -68,7 +69,6 @@
                 Push;
             </Groups>
         </DeployStepsToExecute>
-        -->
         <!--
         <DeployStepsToExecute Include="$(DeployStepsPushToDirectory)">
             <Properties>
@@ -80,6 +80,7 @@
                 Push;
             </Groups>
         </DeployStepsToExecute>
+        -->
         <DeployStepsToExecute Include="$(DeployStepsPushToSymbolServer)">
             <Properties>
                 Configuration=$(ProductionConfiguration);
@@ -90,7 +91,6 @@
                 SymbolServer;
             </Groups>
         </DeployStepsToExecute>
-        -->
         <!--
         <DeployStepsToExecute Include="$(DeployStepsPushToGitHubRelease)">
             <Properties>

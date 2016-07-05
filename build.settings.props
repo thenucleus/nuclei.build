@@ -684,8 +684,8 @@
         of dependencies that should be included.
     -->
     <ItemGroup>
-        <!--<DesignTimeDependencies Include="nBuildKit" />-->
-        <!--<DesignTimeDependencies Include="nUnit" />-->
+        <DesignTimeDependencies Include="nBuildKit" />
+        <DesignTimeDependencies Include="StyleCop.Analyzers" />
     </ItemGroup>
 
 

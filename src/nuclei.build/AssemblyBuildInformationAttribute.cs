@@ -7,6 +7,7 @@
 
 using System;
 using System.Diagnostics.CodeAnalysis;
+using Nuclei.Build.Properties;
 
 namespace Nuclei.Build
 {
@@ -34,12 +35,14 @@ namespace Nuclei.Build
         {
             if (versionControlInformation == null)
             {
-                throw new ArgumentNullException("versionControlInformation", "The version control information string should not be null");
+                throw new ArgumentNullException(nameof(versionControlInformation));
             }
 
             if (string.IsNullOrWhiteSpace(versionControlInformation))
             {
-                throw new ArgumentException("The version control information string should not be an empty string.", "versionControlInformation");
+                throw new ArgumentException(
+                    Resources.Exceptions_Messages_ParameterShouldNotBeAnEmptyString,
+                    nameof(versionControlInformation));
             }
 
             BuildNumber = buildNumber;

@@ -8,6 +8,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
+using Nuclei.Build.Properties;
 
 namespace Nuclei.Build
 {
@@ -38,12 +39,14 @@ namespace Nuclei.Build
         {
             if (buildTime == null)
             {
-                throw new ArgumentNullException("buildTime", "The build time string should not be null");
+                throw new ArgumentNullException(nameof(buildTime));
             }
 
             if (string.IsNullOrWhiteSpace(buildTime))
             {
-                throw new ArgumentException("The build time string should not be an empty string.", "buildTime");
+                throw new ArgumentException(
+                    Resources.Exceptions_Messages_ParameterShouldNotBeAnEmptyString,
+                    nameof(buildTime));
             }
 
             BuildTime = DateTimeOffset.ParseExact(buildTime, "o", CultureInfo.InvariantCulture);

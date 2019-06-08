@@ -364,7 +364,7 @@
         <DeployStepsToExecute Include="$(DeployStepsPushToNuget)">
             <ExecuteAfter></ExecuteAfter>
             <ExecuteBefore></ExecuteBefore>
-             <Groups>
+            <Groups>
                 deploy;
                 deploy.package.nuget;
             </Groups>

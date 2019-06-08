@@ -980,6 +980,7 @@
         </BuildStepsToExecute>
         -->
 
+        <!--
         <BuildStepsToExecute Include="$(BuildStepsAnalyzeBinariesFxCop)">
             <ExecuteAfter></ExecuteAfter>
             <ExecuteBefore></ExecuteBefore>
@@ -998,6 +999,7 @@
                 Platform=$(Platform)
             </Properties>
         </BuildStepsToExecute>
+        -->
 
         <!--
         <BuildStepsToExecute Include="$(BuildStepsBuildILMerge)">

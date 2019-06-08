@@ -12,7 +12,7 @@
         <TestConfiguration>Release</TestConfiguration>
 
         <!-- The build configuration (debug / release / ..) that will be used to create the binaries that should be deployed -->
-        <ProductionConfiguration>Deploy</ProductionConfiguration>
+        <ProductionConfiguration>Release</ProductionConfiguration>
 
         <!-- The platform for which the binaries will be build -->
         <!-- <Platform>Any CPU</Platform> -->

@@ -3,13 +3,19 @@
     <TargetFramework>netstandard1.3</TargetFramework>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
+    <InformationalVersion>1.0.0</InformationalVersion>
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>1.0.0</Version>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <SymbolPackageFormat>symbols.nupkg</SymbolPackageFormat>
     <PackageOutputPath>$(MSBuildThisFileDirectory)/../../build/deploy</PackageOutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
     <Authors>P. van der Velde</Authors>
     <Company>Company</Company>
     <PackageId>Nuclei.Build</PackageId>

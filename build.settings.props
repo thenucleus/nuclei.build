@@ -851,6 +851,7 @@
             <Properties>
             </Properties>
         </BuildStepsToExecute>
+        <!--
         <BuildStepsToExecute Include="$(BuildStepsPrepareGenerateLicenses)">
             <ExecuteAfter></ExecuteAfter>
             <ExecuteBefore></ExecuteBefore>
@@ -867,6 +868,7 @@
             <Properties>
             </Properties>
         </BuildStepsToExecute>
+        -->
         <BuildStepsToExecute Include="$(BuildStepsPrepareGenerateFiles)">
             <ExecuteAfter></ExecuteAfter>
             <ExecuteBefore></ExecuteBefore>

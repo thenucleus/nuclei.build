@@ -3,15 +3,15 @@
     {
       "src": [
         {
-            "cwd": "../",
-            "exclude": [
-                "**/obj/**",
-                "**/bin/**",
-                "_site/**"
-            ],
-            "files": [
-                "src/**/*.csproj"
-            ]
+          "files": [
+            "src/**/*.csproj"
+          ],
+          "cwd": ".",
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "_site/**"
+          ]
         }
       ],
       "dest": "obj/api"
